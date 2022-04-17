@@ -8,7 +8,7 @@
 # Description: Build OpenWrt using GitHub Actions
 #
 
-name: Build OpenWrt
+name: 841hp-v2 all-kmod-en
 
 on:
   repository_dispatch:
@@ -21,9 +21,9 @@ on:
 
 env:
   REPO_URL: https://github.com/si-GILA/openwrt
-  REPO_BRANCH: openwrt-22.03
+  REPO_BRANCH: master
   FEEDS_CONF: feeds.conf.default
-  CONFIG_FILE: .config
+  CONFIG_FILE: .config-all-mod
   DIY_P1_SH: diy-part1.sh
   DIY_P2_SH: diy-part2.sh
   UPLOAD_BIN_DIR: false
